@@ -44,19 +44,24 @@ stars.forEach(function (star) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const commentForm = document.getElementById('comment-form');
+    const nameInput = document.getElementById('name-input');
     const commentInput = document.getElementById('comment-input');
     const commentsList = document.getElementById('comments-list');
 
     commentForm.addEventListener('submit', function(event) {
         event.preventDefault();
-        const newCommentText = commentInput.value;
-        if(newCommentText.trim() !== "") {
+        const name = nameInput.value.trim();
+        const comment = commentInput.value.trim();
+        if (name !== "" && comment !== "") {
             const newComment = document.createElement('li');
             newComment.classList.add('comment-item');
-            newComment.textContent = newCommentText;
+            newComment.innerHTML = `<strong>${name}:</strong> ${comment}`;
             commentsList.appendChild(newComment);
-            commentInput.value = ""; // Clear the input field
+            nameInput.value = "";
+            commentInput.value = ""; // Clear the input fields
         }
     });
 });
+
+
 

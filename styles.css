@@ -4,11 +4,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: rgb(143, 87, 87);
 }
 
 header {
-    background-color: rgb(124, 31, 31);
+    background-color: rgb(54, 54, 54);
     color: #fff;
     padding: 5px 10px 10px 10px;
     text-align: left;
@@ -25,7 +25,7 @@ header {
 }
 
 nav {
-    background-color: #6e1f1f;
+    background-color: #636262;
     padding: 10px;
     text-align: center;
 }
@@ -67,29 +67,41 @@ nav a {
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 10px;
-    padding: 10px;
-    margin: 10px;
+    gap: 1%;
+    padding: 1%;
+    margin: 1%;
 }
 
 .restaurant-item {
     border-radius: 5px;
     background-color: lightgray;
     width: auto;
-    height: 50;
+    height: 75px;
     padding: 10px;
     margin: 0px 10px 10px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
 .review-item {
     border-radius: 5px;
     background-color: lightgray;
-    border-color: ligh;
     width: auto;
-    height: 50px;
+    height: 75px;
     padding: 10px;
     margin: 0px 10px 10px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.circle-icon {
+    border-radius: 50%;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+}
+
+.name {
+    padding-left: 150%;
 }
 
 ul {
