@@ -1,0 +1,66 @@
+/* Add your CSS styling here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgb(124, 31, 31);
+    color: #fff;
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+}
+
+#title {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Add more styles for different sections */
+
+/* Add search bar and button styles */
+#search-bar {
+    padding: 8px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+#search-button {
+    padding: 8px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+/* Add navigation menu styles */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+
+.grid1 {
+    grid-column: span;
+    text-decoration: none;
+}
+
