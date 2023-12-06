@@ -14,6 +14,11 @@ header {
     text-align: left;
 }
 
+/* footer {
+    background-color: rgb(124, 31, 31);
+    height: 10px
+} */
+
 #title {
     text-decoration: none;
     color: white;
@@ -59,8 +64,88 @@ nav a {
     width: 40%;
   }
 
-.grid1 {
-    grid-column: span;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.restaurant-item {
+    border-radius: 5px;
+    background-color: lightgray;
+    width: auto;
+    height: 50;
+    padding: 10px;
+    margin: 0px 10px 10px 0px;
+}
+
+
+.review-item {
+    border-radius: 5px;
+    background-color: lightgray;
+    border-color: ligh;
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    margin: 0px 10px 10px 0px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Space between items */
+    font-size: 20px;
+    padding-left: 2%;
+    
+}
+
+a {
     text-decoration: none;
+    color: #000; /* Example color */
+}
+
+.star-rating {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the stars horizontally */
+    font-size: 24px;
+    cursor: pointer;
+  }
+.star-rating li {
+color: #d3d3d3; /* Light grey color for empty stars */
+}
+
+.star-rating .filled {
+color: #ffd700; /* Gold color for filled stars */
+}
+
+.comments-section {
+margin-top: 20px;
+padding-left: 1%;
+}
+
+#comment-input {
+    width: 95%;
+    height: 10%;
+    margin-bottom: 0%;
+    padding: 1%;
+}
+
+#comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-item {
+    background-color: #f4f4f4;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
