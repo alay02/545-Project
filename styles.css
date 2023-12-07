@@ -111,7 +111,6 @@ header {
     width: 20%;
     height: auto;
     color: white;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
 }
 
 #about hr {
@@ -124,7 +123,8 @@ header {
 
 footer {
     background-color: rgb(143, 143, 143);
-    height: 200px
+    height: 100px
+    box-shadow: 0px -6px 2px -3px rgba(0, 0, 0, 0.3);
 }
 
 nav {
@@ -327,7 +327,8 @@ color:  #aa2727; /* Gold color for filled stars */
 
 .comments-section {
 margin-top: 20px;
-padding-left: 1%;
+padding-left: 22%;
+padding-right: 22%;
 }
 
 #comment-input {
@@ -357,3 +358,35 @@ padding-left: 1%;
   .rating .filled {
     color: #aa2727; /* Set the color for the filled stars */
   }
+
+.sidebar {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    left: 0;
+    top: 17%;
+    background-color:#aa2727;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.sidebarRight {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 17%;
+    background-color:#aa2727;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
+}
+
+.website {
+    padding-left: 15%;
+    color: white;
+    font-size:medium;
+}
+
+.phone {
+    text-align: center;
+    color: white;
+    font-size: medium;
+}
