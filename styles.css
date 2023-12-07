@@ -56,8 +56,8 @@ header {
 
 
 #searchInput:focus + #searchButton {
-    background-color:  #9e2525;
     border-color: #9e2525;
+    background-color:  #9e2525;
 }
 
 
@@ -98,12 +98,11 @@ header {
     font-size: small;
 }
 
-.content {
+#content {
     display: flex;
     flex-flow: row;
-    min-height: calc(100vh - 60px);
+    height: 100%;
     gap: 20px;
-    padding-bottom: 60px;
 }
 
 #about {
@@ -130,8 +129,6 @@ footer {
     display: flex;
     align-items: center;
     flex-flow: column;
-    position: relative;
-    margin-top: -60px;
 }
 
 .footer-links {
@@ -224,9 +221,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    cursor: pointer;
   }
-
 
 .restaurant-item .restaurant-footer {
     flex: 0 1 50px;
@@ -252,6 +247,7 @@ h1 {
 
 h3 {
     margin: 0;
+    color: #aa2727;
 }
 
 h4 {
@@ -351,7 +347,8 @@ color:  #aa2727; /* Gold color for filled stars */
 
 .comments-section {
 margin-top: 20px;
-padding-left: 1%;
+padding-left: 22%;
+padding-right: 22%;
 }
 
 #comment-input {
@@ -382,82 +379,44 @@ padding-left: 1%;
     color: #aa2727; /* Set the color for the filled stars */
   }
 
-.pop-up {
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    position: fixed;
-    top: 0;
+.sidebar {
+    position: absolute;
+    width: 20%;
     left: 0;
+    height: 91.75%;
+    background-color:#aa2727;
+}
+
+.sidebarRight {
+    height: 100%;
+    position:relative;
+    width: 20%;
     right: 0;
-    bottom: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: -1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color:#aa2727;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.4);
 }
 
-.pop-up.open {
-    opacity: 1;
-    z-index: 999;
+.website {
+    padding-left: 15%;
+    color: white;
+    font-size:medium;
 }
 
-.pop-up-inner {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
-    padding: 5px 5px;
-    width: 400px;
-}
-
-.pop-up-content {
-    padding : 10px;
+.phone {
     text-align: center;
+    color: white;
+    font-size: medium;
 }
 
-.pop-up-content h3 {
-    padding: 10px;
+.restaurants {
+    height: 100%;
+    padding-right: 25%;
+    padding-left: 25%;
+    overflow-y: auto;
 }
 
-#review-quit {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: none;
-    background-color: white;
-}
-
-#review-quit:hover {
-    color: #9e2525;
-}
-
-.pop-up-content button {
-    border-radius: 30px;
-    border: 2px solid   rgb(233, 233, 233);
-    height: 40px;
-    width: 100px;
-    background-color: white;
-    color:  #9e2525;
-    font-size: small;
-    font-weight: 500;
-}
-
-.pop-up-content button:hover {
-    border-color: #9e2525;
-}
-
-textarea {
-    padding: 10px;
-    resize: none;
-    border-color: rgb(221, 221, 221);
-    outline: none;
-    font-size: large;
-    height: 125px;
-    border-radius: 4px;
-    width: 90%;
-}
-
-textarea:focus {
-    border-color:  #9e2525;
+.restaurants-grid-container {
+    display:grid;
+    align-items: center;
+    overflow-y: auto;
 }
