@@ -1,9 +1,13 @@
-// Add your JavaScript code here
 function performSearch() {
-    // Add code here to handle the search functionality
-    var searchTerm = document.getElementById('search-bar').value;
-    // Perform search based on the searchTerm
-    console.log('Searching for: ', searchTerm);
+  var searchTerm = document.getElementById('searchInput').value;
+    
+  fetch(searchTerm.toLowerCase() + '.html')
+    .then(response => response.text())
+    .then(html => {
+      document.body.innerHTML = html;
+    })
+    .catch(error => console.error('Error loading content:', error));
+  console.log('Searching for: ', searchTerm);
 }
 
 // Function to set the rating
@@ -27,6 +31,25 @@ function resetStars() {
     star.classList.remove("filled");
   });
 }
+
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('searchInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("restaurants");
+  li = ul.getElementsByClassName('restaurant-item');
+
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("h1")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
 
 // Function to handle the click event on each star
 function handleStarClick(event) {
