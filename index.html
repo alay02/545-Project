@@ -5,74 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taste of the Town</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <h1><a href="index.html" id="title">Taste of the Town</a></h1>
-        <p>Discover the best local places to eat!</p>
+        <div id="test">
+            <h1><a href="index.html" id="title"><img src="images/logo.png" alt="Taste of the Town" width="260" height="100"></a></h1>
+            <!-- <div id="slogan">Discover the best local places to eat!</div> -->
+        </div>
+        <div id="test2">
+            <button id="sign-in">Sign-in</button>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Search Restaurants/Towns...">
+                <button id="searchButton" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
     </header>
 
     <nav>
-        <!-- Add your navigation menu here -->
         <a href="index.html">Home</a>
         <a href="#">Reviews</a>
         <a href="#">Restaurants</a>
         <a href="#">Trending</a>
     </nav>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <h2>Restaurants Near Hoboken</h2>
-            <div class="restaurant-item">
-                <h3><a href="tacoria.html">Tacoria</a></h3>
-            </div>
-            <div class="restaurant-item">
-                <h3><a href="shakeshack.html">Shake Shack</a></h3>
-            </div>
-            <div class="restaurant-item">
-                <h3><a href="chipotle.html">Chipotle</a></h3>
-            </div>
-            <div class="restaurant-item">
-                <h3><a href="mammouns.html">Mamoun's</a></h3>
+    <div id="content">
+        <div id="about">
+            <h2>About Hoboken</h2>
+            <hr>
+            <div>
+                <p>Hoboken, New Jersey, located on the west bank of the Hudson River across from Manhattan, 
+                 is a city with a rich history and vibrant culture. Known for its historic waterfront, 
+                 which was once a major shipping hub, Hoboken offers stunning views of the Manhattan skyline.
+                 The city is often recognized as the birthplace of baseball. With parks like Pier A Park and Sinatra Park, 
+                 it provides recreational spaces for residents and hosts community events. Accessible and densely populated, 
+                 Hoboken maintains its charm as a city with a unique blend of history, culture, and picturesque landscapes.
+                 </p>
+                 Support Local Businesses!
             </div>
         </div>
 
 
-        
-        <div class="grid-item">
-            <h2>Recent Reviews</h2>
-            <div class="review-item">
-                <div class="circle-icon"> 
-                    <h3 class="name">
-                    Shivam
-                </h3>
-            </div>
-                <p>This restaurant sucks fucking ballsak </p>
-            </div>
-            <div class="review-item">
-                <div class="circle-icon"> 
-                    <h3 class="name">
-                        Krish
-                        </h3>
+        <div class="grid-container">
+            <div id="restaurants" class="grid-item">
+                <h2>Popular Restaurants in Hoboken</h2>
+                <hr>
+                <div class="restaurant-item">
+                    <div class="restaurant-header">
+                        <h3><a href="tacoria.html">Tacoria</a></h3>
+                        <div class="rating">
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span>&#9733;</span>
+                          </div>
                     </div>
-                <p>I love the sauce so much I rub it on my tits </p>
+                    <div class="restaurant-content">
+                        <img src="images/tacoria2.jpg">
+                    </div>
+                    <div class="restaurant-footer">
+                        <button onclick="location.href='http://www.google.com'" type="button">Website</button>
+                        <button>Write a Review</button>
+                    </div>
+                </div>
+
+
+                <div class="restaurant-item">
+                    <div class="restaurant-header">
+                        <h3><a href="shakeshack.html">Shake Shack</a></h3>
+                        <div class="rating">
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                          </div>
+                    </div>
+                    <div class="restaurant-content">
+                        <img src="images/shakeshack.png">
+                    </div>
+                    <div class="restaurant-footer">
+                        <button>Website</button>
+                        <button>Write a Review</button>
+                    </div>
+                </div>
+
+                <div class="restaurant-item">
+                    <div class="restaurant-header">
+                        <h3><a href="chipotle.html">Chipotle</a></h3>
+                    </div>
+                    <div class="restaurant-content">
+                        <img src="images/chipotle.jpg">   
+                    </div>
+                    <div class="restaurant-footer"></div>
+                </div>
             </div>
             
-            <div class="review-item">
-                <div class="circle-icon"> 
-                    <h3 class="name">
-                        Krish
-                        </h3>
+            <div class="grid-item">
+                <h2>Recent Reviews</h2>
+                <hr>
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-icon"></div>
+                        <div class="user-name">
+                            <a href="#">Shivam Patel</a>
+                        </div>
+                        <div class="review-restaurant">
+                            <a href="tacoria.html">Tacoria</a>
+                        </div>
                     </div>
-                <p>I love the sauce so much I rub it on my tits </p>
-            </div>
-            <div class="review-item">
-                <div class="circle-icon"> 
-                    <h3 class="name">
-                        Krish
-                        </h3>
+
+                    <div class="review-content">
+                        I fucking hate tacoria I will never go there again, I found pubes in my carne asada taco
                     </div>
-                <p>I love the sauce so much I rub it on my tits </p>
+
+                    <div class="review-footer">
+                        <div class="rating">
+                            <span class="filled">&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="user-icon"></div>
+                        <div class="user-name">Krish Nair</div>
+                        <div class="review-restaurant">
+                            Shake Shack
+                        </div>
+                    </div>
+
+                    <div class="review-content">
+                        I love the sauce so much I rub it on my tits
+                    </div>
+
+                    <div class="review-footer">
+                        <div class="rating">
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                            <span class="filled">&#9733;</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

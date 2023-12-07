@@ -1,4 +1,4 @@
- // Add your JavaScript code here
+// Add your JavaScript code here
 function performSearch() {
     // Add code here to handle the search functionality
     var searchTerm = document.getElementById('search-bar').value;
@@ -62,6 +62,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-
 
