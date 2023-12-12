@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, redirect } from 'react-router-dom';
 import { AppHeader } from './components/AppHeader';
 import { AppNav } from './components/AppNav';
 import { AppFooter } from './components/AppFooter';
@@ -29,6 +29,7 @@ export default function App() {
       <AppHeader />
       <AppNav />
       <div className="content">
+        
         <BrowserRouter>
           <Routes>
               <Route index element={<Home />} />
@@ -42,6 +43,7 @@ export default function App() {
                 <Route path='3' element={<Tony />}/>
                 <Route path='4' element={<EastLA />}/>
               </Route>
+              <Route path="/" element={<Home />} />
           </Routes>
         </BrowserRouter>
       </div>

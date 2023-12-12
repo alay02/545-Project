@@ -52,6 +52,7 @@ export function RestaurantItem({ restaurant }) {
 
         if(reviewData.review_comment === '' || reviewData.review_rating === 0) {
             alert('Must enter review and rating!')
+            return;
         }
 
         fetch('http://localhost:3000/api/reviews', {

@@ -366,8 +366,12 @@ color:  #aa2727;
 }
 
 .comments-section {
-margin-top: 20px;
-padding-left: 1%;
+    margin-top: 20px;
+    padding-left: 1%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px
 }
 
 #comment-input {
@@ -519,4 +523,23 @@ textarea:focus {
 
 .restaurant-container {
     padding: 10px;
+}
+
+.post-review-button {
+        border-radius: 30px;
+        border: 2px solid   rgb(233, 233, 233);
+        height: 40px;
+        width: 100px;
+        background-color: white;
+        color:  #9e2525;
+        font-size: small;
+        font-weight: 500;
+}
+
+.post-review-button:hover {
+    border-color: #9e2525;
+}
+
+.tab {
+    width: 600px
 }
