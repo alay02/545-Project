@@ -65,9 +65,10 @@ export function RestaurantItem({ restaurant }) {
         .then(response => response.json())
         .then(data => console.log('Success:', data))
         .catch((error) => console.error('Error:', error));
-
+        
         setSelectedRating(0);
         closePopup()
+        window.location.reload();
     };
 
     const handleInputChange = (e) => {
